@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { MODULES } from 'src/app/modules/modules';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +14,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FlexLayoutModule,
+    MODULES,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
