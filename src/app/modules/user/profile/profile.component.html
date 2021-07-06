@@ -3,7 +3,15 @@
     <div id="profile-content-area" fxLayout="column">
         <div id="profile-content-top">Top menu</div>
         <div fxLayout="row">
-            <div id="profile-content-left" fxFlex="40">Left panel</div>
+            <div id="profile-content-left" fxFlex="40">
+              Left panel
+              <input type="file"
+                     multiple
+                     accept="image/*"
+                     (change)="onFileSelected($event)"/>
+              <button mat-button-raised
+                      (click)="uploadPhoto()">Upload Photo</button>
+            </div>
             <div id="profile-content-right" fxFlex="60">Right panel</div>
         </div>
     </div>
